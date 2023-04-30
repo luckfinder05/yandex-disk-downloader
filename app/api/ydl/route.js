@@ -8,7 +8,11 @@ export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const yDiskLink = await decodeURIComponent(searchParams.get('link'));
 
-  return new NextResponse.redirect(302, 'https://nvtsk.ru/api/ydl/' + yDiskLink);
+  return  NextResponse.redirect('https://nvtsk.ru/ydl/' + yDiskLink);
+
+
+
+  // Всё расположенное ниже не работает ввиду ограничений при бесплатном деплое на Vercel.com
   let res;
 
   try {
