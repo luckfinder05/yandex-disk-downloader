@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.inputText {
+  display: block;
+  width: 90vw;
+  font-size: 20px;
+}
+
+.inputBtn {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 40px;
+}
