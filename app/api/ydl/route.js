@@ -7,6 +7,8 @@ const https = require('https');
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const yDiskLink = await decodeURIComponent(searchParams.get('link'));
+
+  return new NextResponse.redirect(302, 'https://nvtsk.ru/api/ydl/' + yDiskLink);
   let res;
 
   try {
